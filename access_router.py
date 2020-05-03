@@ -35,7 +35,7 @@ class router_session:
             print('Connected')
         else:
             print(r)
-
+        print('--------------------------------------------------------------------------')
     def remove_backup_dns(self):
         payload = json.dumps({"staticSecondaryDnsServer": "0.0.0.0"})  # invalid, so like removing
         r = self.sess.put(self.host + '/api/network/1', data=payload, verify=self.verify)

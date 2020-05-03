@@ -24,6 +24,10 @@ dns server.  The class could easily be extended to control other router function
 using the same method of capturing network activity through the router gui, then using the
 resulting api calls.
 
+I tried to make this useful, but didn't spend the time looking at best practices on everything
+(e.g. is there a smart way to add the self-signed certificate of one's router, instead of
+avoiding warnings and verification).  Feel free to improve it or make suggestions.
+
 I am using pyinstaller to generate executables for these scripts so that my wife can run
 the restore_dns easily in case of any home internet interruption due to some issue with the
 pi-hole.  When I am around, I can quickly switch back and forth to see if I have fixed the issue.
