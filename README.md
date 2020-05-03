@@ -10,7 +10,7 @@ something real.  When I was ready to use the pi-hole again, I had to do the same
 set the secondary dns server to something invalid (thus avoiding bypass of the pi-hole).
 This seemed ridiculous.
 
-#Methodology
+# Methodology
 I borrowed from other codebases to see how to login to the router api remotely:
   - https://github.com/cisasteelersfan/quantum_gateway
   - https://github.com/matray/quantum_gateway_reverse_engineering
