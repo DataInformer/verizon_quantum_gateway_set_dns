@@ -1,6 +1,7 @@
 # verizon-quantum-gateway-set-dns
 Access the router API to view and change settings, in particular changing the DNS server.
 
+# Goal 
 I created this script because of frustrations at the number of steps required when I needed
 to temporarily bypass my pi-hole.  With my Verizon Quantum Gateway router, I had to 
 navigate to the router settings, enter the password, then click through a bunch of screens
@@ -9,10 +10,11 @@ something real.  When I was ready to use the pi-hole again, I had to do the same
 set the secondary dns server to something invalid (thus avoiding bypass of the pi-hole).
 This seemed ridiculous.
 
-**Methodology**
+#Methodology
 I borrowed from other codebases to see how to login to the router api remotely:
-  -https://github.com/cisasteelersfan/quantum_gateway
-  -https://github.com/matray/quantum_gateway_reverse_engineering
+  - https://github.com/cisasteelersfan/quantum_gateway
+  - https://github.com/matray/quantum_gateway_reverse_engineering
+  
 Verizon does not provide any documentation of the API that I was able to find.  In order
 to know the correct API calls and format to update the DNS severs, I used Chrome's 
 developer tools to capture network activity while I logged into the router and went to
